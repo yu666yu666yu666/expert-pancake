@@ -1,4 +1,4 @@
-/* 5.11.7 */
+/* 5.7 */
 #include <stdio.h>
 #include <stdlib.h>
 void func(double x);
@@ -11,6 +11,7 @@ int main()
     func(x);
     return 0;
 }
+
 void func(double x)
 {
     printf("%lf\n", x * x * x);
