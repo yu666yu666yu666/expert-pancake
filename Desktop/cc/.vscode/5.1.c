@@ -1,7 +1,7 @@
 #include<stdio.h>
-#include<string.h>
-#include<math.h>
+#include<stdlib.h>
 #define shi 60
+
 int main(void) {
     int min,h;
     puts("Please input your minutes: ");
