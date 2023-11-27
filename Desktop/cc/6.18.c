@@ -1,6 +1,7 @@
 /* 6.18 */
 #include <stdio.h>
 #include <stdlib.h>
+
 int main ()
 {
     int n=5;
