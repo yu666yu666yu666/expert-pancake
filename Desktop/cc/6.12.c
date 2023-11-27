@@ -19,4 +19,5 @@ int main ()
       }
     printf("%lf",num);
     }
+    return 0;
 }

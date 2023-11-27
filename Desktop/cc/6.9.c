@@ -11,6 +11,7 @@ int main ()
         result=chachuji (m,n);
         printf("%lf",result);
     }
+    return 0;
 }
 double chachuji (double m,double n)
 {
