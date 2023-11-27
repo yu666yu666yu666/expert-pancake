@@ -1,6 +1,7 @@
 /* 5.8 */
 #include <stdio.h>
 #include <stdlib.h>
+
 int main()
 {
     int mod,num;
