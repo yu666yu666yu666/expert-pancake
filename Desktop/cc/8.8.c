@@ -35,7 +35,6 @@ break;
 }
 }
 printf("Bye!\n");
-
 system("pause");
 return 0;
 }
@@ -50,11 +49,9 @@ while (getchar() != '\n')
 ;
 return ch;
 }
-
 char get_choice(void)
 {
 int ch;
-
 printf("Enter the operation of your choice:\n");
 printf("a. add                      s. subtract\n");
 printf("m.multiply                      d. divide\n");
