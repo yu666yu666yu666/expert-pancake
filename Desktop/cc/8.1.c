@@ -20,7 +20,7 @@ int main (int argc,char*argv [])
         putc(ch,stdout);
         count++;
    }
-   printf("文件%s的字符数: %d\\n",argv[1],count);
+   printf("文件%s的字符数: %d\n",argv[1],count);
    fclose(fp);
    return 0;
 }
