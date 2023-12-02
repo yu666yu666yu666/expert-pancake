@@ -4,24 +4,8 @@
 #include <ctype.h>
 #include<math.h>
 
-void func(int a, int b, int **arr)
-{
-    float temp;
-    int i, j;
-    for (i = 1; i < a - 1; i++)
-        for (j = 1; j < b - 1; j++)
-        {
-            if (abs(arr[i][j] - arr[i - 1][j]) > 1 && 
-                abs(arr[i][j] - arr[i + 1][j] > 1) &&
-                abs(arr[i][j] - arr[i][j - 1] > 1) &&
-                abs(arr[i][j] - arr[i][j + 1] > 1))
-            {
-                arr[i][j] = (arr[i - 1][j] + arr[i + 1][j] + arr[i][j - 1] + arr[i][j + 1]) / 4;
-                temp = ((arr[i - 1][j] + arr[i + 1][j] + arr[i][j - 1] + arr[i][j + 1]) / 4.0 - arr[i][j]) >= 0.5 ? 1 : 0; 
-                arr[i][j] += temp;
-            }
-        }
-}
+void func(int a, int b, int **arr);
+
 
 int main(void)
 {
@@ -99,5 +83,23 @@ int main(void)
         fprintf(stderr, "Error in closing result.txt\n");
     system("pause");
     return 0;
+}
+void func(int a, int b, int **arr)
+{
+    float temp;
+    int i, j;
+    for (i = 1; i < a - 1; i++)
+        for (j = 1; j < b - 1; j++)
+        {
+            if (abs(arr[i][j] - arr[i - 1][j]) > 1 && 
+                abs(arr[i][j] - arr[i + 1][j] > 1) &&
+                abs(arr[i][j] - arr[i][j - 1] > 1) &&
+                abs(arr[i][j] - arr[i][j + 1] > 1))
+            {
+                arr[i][j] = (arr[i - 1][j] + arr[i + 1][j] + arr[i][j - 1] + arr[i][j + 1]) / 4;
+                temp = ((arr[i - 1][j] + arr[i + 1][j] + arr[i][j - 1] + arr[i][j + 1]) / 4.0 - arr[i][j]) >= 0.5 ? 1 : 0; 
+                arr[i][j] += temp;
+            }
+        }
 }
 
