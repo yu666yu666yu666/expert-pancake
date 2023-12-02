@@ -54,7 +54,6 @@ int main()
         printf("You can enter day, month and year again (q to quit): ");
     }
     printf("Done.\n");
-
     system("pause");
     return 0;
 }
