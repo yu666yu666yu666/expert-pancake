@@ -1,16 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include<math.h>
+#include<string.h>
 int main ()
 {
     int i;
-    int *p=(int *)malloc(4*sizeof(int));
+    int *p=(int *)malloc(2*sizeof(int));
     int *q;
-    for(i=0,q=p;i<4;i++,q++)
+    for(i=0,q=p;i<2;i++,q++)
     {
         scanf("%d",q);
     }
-    for(i=0,q=p;i<4;i++,q++)
+    for(i=0,q=p;i<2;i++,q++)
     {
         printf("%d",*q);
     }
