@@ -5,13 +5,13 @@
 int main ()
 {
     int i;
-    int *p=(int *)malloc(6*sizeof(int));
+    int *p=(int *)malloc(5*sizeof(int));
     int *q;
-    for(i=0,q=p;i<6;i++,q++)
+    for(i=0,q=p;i<5;i++,q++)
     {
         scanf("%d",q);
     }
-    for(i=0,q=p;i<6;i++,q++)
+    for(i=0,q=p;i<5;i++,q++)
     {
         printf("%d",*q);
     }
